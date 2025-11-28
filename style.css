@@ -13,6 +13,93 @@
 }
 
 
+
+
+.apply-btn-right {
+  background: linear-gradient(135deg, #3300ff, #db09ee);
+  padding: 10px 26px;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 4px 12px rgba(255, 0, 90, 0.4);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(6px);
+
+  /* 🔥 This moves the button slightly left from the corner */
+  margin-right: 50px !important; 
+}
+
+.apply-btn-right:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 12px 25px rgba(221, 0, 255, 0.55);
+  background: linear-gradient(135deg, #00b421, #343434);
+}
+
+
+
+/* Branding Wrapper */
+.navbar-brand {
+  font-size: 1.9rem;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  font-family: "Poppins", sans-serif;
+  color: #222 !important;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+/* SVG Logo Style */
+.navbar-brand svg {
+  width: 52px;
+  height: 52px;
+  fill: url(#brandGradient);
+  filter: drop-shadow(0 4px 6px rgba(0,0,0,0.15));
+  transition: 0.3s ease;
+}
+
+/* Hover Effect */
+.navbar-brand:hover {
+  transform: translateY(-2px);
+  color: #b500e2 !important;
+}
+
+.navbar-brand:hover svg {
+  transform: scale(1.08);
+  filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.234));
+}
+
+/* Apply gradient to the SVG logo */
+svg defs #brandGradient stop:first-child {
+  stop-color: #6f00ff;
+}
+
+svg defs #brandGradient stop:last-child {
+  stop-color: #a209ee;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Announcement Bar Styles */
 
 .announcement-bar {

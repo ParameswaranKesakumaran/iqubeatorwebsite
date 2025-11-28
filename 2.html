@@ -12,69 +12,76 @@
 
 </head>
 <body>
-<nav class="navbar navbar-expand-lg bg-body-tertiary" id="navvbar">
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-grid-1x2-fill" viewBox="0 0 16 16">
-  <path d="M0 1a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm9 0a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1zm0 9a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1z"/>
-</svg> Mosaic Ventures</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+    <!-- LEFT: LOGO ONLY -->
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+    <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 16 16">
+  <defs>
+    <linearGradient id="brandGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff6a00"/>
+      <stop offset="100%" stop-color="#ee0979"/>
+    </linearGradient>
+  </defs>
+
+  <path d="M0 1a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm9 0a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1zm0 9a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1z"
+    fill="url(#brandGradient)" />
+</svg>
+
+      Mosaic Ventures
+    </a>
+
+    <!-- MOBILE TOGGLER -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
 
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="#">About Us</a>
-        </li>
+    <!-- CENTER: MENU -->
+    <div class="collapse navbar-collapse justify-content-center" id="navbarMenu">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+
+        <li class="nav-item"><a class="nav-link active" href="#">About Us</a></li>
+
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Programs
-          </a>
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Programs</a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="2.html">HERA Sri Lanka Accelerator</a></li>
             <li><a class="dropdown-item" href="3.html">HERA Nigeria Accelerator</a></li>
-            
-            <li><a class="dropdown-item" href="#">Accelerator for Students
-</a></li>
-<li><a class="dropdown-item" href="#">Incubate Lanka
-</a></li>
-<li><a class="dropdown-item" href="#">Scale to North America 
-</a></li>
-<li><a class="dropdown-item" href="#">Scale to Europe 
-</a></li>
+            <li><a class="dropdown-item" href="#">Accelerator for Students</a></li>
+            <li><a class="dropdown-item" href="#">Incubate Lanka</a></li>
+            <li><a class="dropdown-item" href="#">Scale to North America</a></li>
+            <li><a class="dropdown-item" href="#">Scale to Europe</a></li>
           </ul>
         </li>
-       <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Sectors</a>
-        </li>
-       
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Investments</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#"> Events</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Contact us</a>
-        </li>
 
-     <a 
-  class="main-apply-button" 
-  href="https://docs.google.com/forms/d/e/1FAIpQLSfB2PHBsbTWPdLzU6aFZavRDyZS5VD-MWI3cAWOE3Az0FnuPw/viewform?usp=preview" 
-  target="_blank">
-  Apply Now
-</a>
+        <li class="nav-item"><a class="nav-link active" href="#">Sectors</a></li>
 
+        <li class="nav-item"><a class="nav-link active" href="#">Investments</a></li>
 
-     
+        <li class="nav-item"><a class="nav-link active" href="#">Events</a></li>
+
+        <li class="nav-item"><a class="nav-link active" href="#">Contact Us</a></li>
+
       </ul>
-     
     </div>
+
+    <!-- RIGHT SIDE: APPLY NOW -->
+    <div class="d-flex">
+      <a 
+        class="apply-btn-right"
+        href="https://docs.google.com/forms/d/e/1FAIpQLSfB2PHBsbTWPdLzU6aFZavRDyZS5VD-MWI3cAWOE3Az0FnuPw/viewform?usp=preview"
+        target="_blank">
+        Apply Now
+      </a>
+    </div>
+
   </div>
 </nav>
+
+
 
 
 <body>
