@@ -3626,9 +3626,9 @@ font-weight: bold;
 /* RIGHT SIDE IMAGE */
 .hero-right img {
   width: 100%;
-  max-width: 600px;
-  border-radius: 18px;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  max-width: 500px;
+ 
+  
 }
 
 
@@ -4383,10 +4383,10 @@ font-weight: bold;
   width: 100%;
   max-width: 450px;
   height: 450px;
-  background: url('images/1.png')
+  background: url('images/herolast.png')
     no-repeat center/cover;
-  border-radius: 20px;
-  box-shadow: 0 0 30px rgba(255, 136, 0, 0.4);
+ 
+ 
   animation: float 4s ease-in-out infinite;
 }
 
