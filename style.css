@@ -5249,3 +5249,568 @@ font-weight: bold;
     height: 350px;
   }
 }
+
+
+
+
+
+
+
+
+
+/* ABOUT SECTION MAIN WRAPPER */
+
+
+h1, h2, h3 {
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    
+}
+
+p {
+    line-height: 1.6;
+    font-size: 12px;
+}
+
+/* ✨ Fade animations */
+.fade-up {
+    animation: fadeUp 1s ease forwards;
+    opacity: 0;
+}
+
+@keyframes fadeUp {
+    from { transform: translateY(40px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+
+/* ---------------------------------------------------
+   SECTION 1 – Full Width Image + Text
+----------------------------------------------------- */
+
+.aboutsection {
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.about-hero {
+    position: relative;
+}
+
+.about-hero img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    border-radius: 0 0 40px 40px;
+    animation: fadeUp 1.2s ease;
+}
+
+.about-hero-text {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0,0,0,0.45);
+    padding: 30px 40px;
+    border-radius: 12px;
+    color: white;
+    text-align: center;
+    width: 70%;
+    animation: fadeUp 1.5s ease;
+}
+
+.about-hero-text h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+
+/* ---------------------------------------------------
+   SECTION 2 – Two Images + Center Text
+----------------------------------------------------- */
+
+.aboutsection2 {
+    padding: 90px 50px;
+    animation: fadeUp 1s ease;
+}
+
+.about2-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.about2-img {
+    width: 28%;
+    height: 480px;
+    object-fit: cover;
+    border-radius: 16px;
+   
+    animation: fadeUp 1.2s ease;
+}
+
+.about2-text {
+    width: 40%;
+    text-align: center;
+    animation: fadeUp 1.3s ease;
+}
+
+.about2-text h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.about2-text p{
+  font-size: 12px;
+  color: #0000007a;
+  font-weight: bold;
+}
+
+
+/* ---------------------------------------------------
+   SECTION 3 – Icon Cards
+----------------------------------------------------- */
+
+.aboutsection3 {
+    text-align: center;
+    padding: 100px 50px;
+    background: #e071ff6d;
+    animation: fadeUp 1s ease;
+}
+.aboutsection3 h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.about3-grid {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 30px;
+}
+
+.about3-card {
+    width: 280px;
+    background: white;
+    padding: 30px 25px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    transition: 0.4s;
+    animation: fadeUp 1.1s ease;
+}
+
+.about3-card h3{
+  color: #000000;
+  font-size: 20px;
+  font-weight: bold;
+}
+.about3-card p{
+  font-size: 10px;
+  color: #0000005a;
+  font-weight: bold;
+}
+
+
+
+.about3-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 45px rgba(0,0,0,0.12);
+}
+
+
+/* ---------------------------------------------------
+   SECTION 4 – Two Column Image + Text
+----------------------------------------------------- */
+
+.aboutsection4 {
+    padding: 120px 60px;
+}
+
+.about4-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    animation: fadeUp 1s ease;
+}
+
+.about4-img-box img {
+    width: 580px;
+    height: 440px;
+    object-fit: cover;
+    border-radius: 16px;
+   
+}
+
+.about4-text {
+    max-width: 450px;
+    
+}
+.about4-text h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.about4-text p{
+  font-size: 12px;
+  color: #0000007a;
+  font-weight: bold;
+}
+
+
+/* ---------------------------------------------------
+   RESPONSIVE
+----------------------------------------------------- */
+
+@media (max-width: 900px) {
+
+    .about2-container {
+        flex-direction: column;
+    }
+
+    .about2-img, .about2-text {
+        width: 100%;
+    }
+
+    .about3-grid {
+        flex-direction: column;
+    }
+
+    .about4-wrapper {
+        flex-direction: column;
+    }
+
+    .about4-img-box img {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+/* ---------------------------------------------------
+   SECTION 5 – Timeline
+----------------------------------------------------- */
+/* SECTION 5 – Premium Center Timeline */
+.aboutsection5 {
+    padding: 120px 50px;
+    text-align: center;
+    background: #f7f9f8;
+}
+
+.aboutsection5 h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.aboutsection5 h2::after {
+    content: "";
+    width: 70px;
+    height: 4px;
+    background: #f7f9f8;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -15px;
+    border-radius: 6px;
+}
+
+
+/* TIMELINE WRAPPER CENTERED */
+.timeline {
+    position: relative;
+    width: 100%;
+    max-width: 750px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+/* CENTER LINE */
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 4px;
+    height: 100%;
+     background:#5d02a8;
+    transform: translateX(-50%);
+    border-radius: 4px;
+}
+
+
+/* TIMELINE ITEM CARD */
+.timeline-item {
+    width: 50%;
+    padding: 25px 30px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.08);
+    position: relative;
+    margin: 40px 0;
+    transition: 0.4s;
+}
+
+/* ZIGZAG LEFT/RIGHT */
+.timeline-item:nth-child(odd) {
+    left: -5%;
+}
+.timeline-item:nth-child(even) {
+    left: 55%;
+}
+
+/* GOLD DOT */
+.timeline-item::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    background: #6e05f7;
+    border-radius: 50%;
+    position: absolute;
+    top: 34px;
+    left: -11.2%;
+    transform: translateX(-50%);
+}
+
+.timeline-item:nth-child(even)::before {
+    left: -10%;
+}
+
+/* TEXT STYLES */
+.timeline-year {
+    font-size: 24px;
+    font-weight: 800;
+    color: #11322f;
+    margin-bottom: 10px;
+}
+
+.timeline-item p {
+    font-size: 12px;
+    line-height: 24px;
+    color: #3f514c;
+    font-weight: bold;
+}
+
+
+/* HOVER EFFECT */
+.timeline-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+
+
+
+
+
+
+/* SCROLL ANIMATION BASE */
+.fade-up {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all .9s ease;
+}
+
+/* ACTIVE ANIMATION */
+.fade-up.show {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+
+    .timeline-item,
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        width: 90%;
+        left: 5% !important;
+    }
+
+    .timeline-item::before {
+        left: -5% !important;
+    }
+
+    .timeline::before {
+        left: 3%;
+    }
+}
+
+
+
+/* ---------------------------------------------------
+   SECTION 6 – Leadership Team
+----------------------------------------------------- */
+.aboutsection6 {
+    padding: 120px 50px;
+    text-align: center;
+    background: #f7f9f8;
+}
+
+.aboutsection6 h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.aboutsection6 h3{
+  font-size: 20px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.aboutsection6 p{
+  font-size: 10px;
+  color: #0000007a;
+  font-weight: bold;
+}
+
+
+.team-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.team-card {
+    width: 260px;
+    padding: 20px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: .4s;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+}
+
+.team-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 14px;
+    margin-bottom: 15px;
+}
+
+.team-card h3 {
+    margin-bottom: 4px;
+}
+
+
+
+
+
+
+
+/* ---------------------------------------------------
+   SECTION 7 – Partners Slider*/
+.aboutsection7 {
+    padding: 120px 50px;
+    text-align: center;
+}
+
+.aboutsection7 h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 60px;
+}
+
+/* Slider wrapper */
+.partners-slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Track for sliding content */
+.partners-track {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    animation: scrollLeft 18s linear infinite;
+}
+
+/* Logo styling */
+.partners-track img {
+    width: 150px;
+    opacity: 0.7;
+    transition: 0.3s ease;
+    filter: grayscale(100%);
+}
+
+.partners-track img:hover {
+    opacity: 1;
+    scale: 1.1;
+    filter: grayscale(0%);
+}
+
+/* Infinite scroll animation */
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* ---------------------------------------------------
+   SECTION 8 – Mission & Vision Banner
+----------------------------------------------------- */
+.aboutsection8 {
+    padding: 120px 60px;
+    background: linear-gradient(135deg, #5807a8, #ed79ed);
+    color: white;
+}
+
+.mv-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.mv-block {
+    width: 45%;
+    background: rgba(255,255,255,0.08);
+    padding: 40px;
+    border-radius: 16px;
+    backdrop-filter: blur(6px);
+}
+
+.mv-block h3 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.mv-block p {
+    font-size: 12px;
+    line-height: 1.6;
+    font-weight: bold;
+
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+
+    .mv-block {
+        width: 100%;
+    }
+
+    .team-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
