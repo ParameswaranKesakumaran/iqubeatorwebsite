@@ -1,19 +1,34 @@
-    <html</html>
-        <head>
-            <title>About Us</title>
+<html>
+<head>
+    <title>Partners</title>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 <link rel="stylesheet" href="style.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
 <link rel="icon" href="images/favicon.png" type="image/png">
-        </head>
-       
-          
-            
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+
+
+
+
+</head>
+
+
+
+
 
 <body>
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+
+
+
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
 
     <!-- LEFT: LOGO ONLY -->
@@ -82,6 +97,7 @@
   </div>
 </nav>
 
+<br><br>
 
 
 
@@ -89,72 +105,128 @@
 
 
 
-<!-- SECTION 1 – Full-Width Hero Image + Text -->
-<section class="aboutsection">
-    <div class="about-hero">
-        <img src="images/about1.jpeg" alt="About MOSAIC Ventures">
-        <div class="about-hero-text">
-            <h1>Empowering Innovation. Connecting Opportunities.</h1>
-            <p>MOSAIC Ventures supports founders, startups, and investors by creating powerful pathways for growth through collaboration, resources, and innovation.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <div class="contact-us-container">
+        <!-- Left Panel: Contact Information -->
+        <div class="contact-us-info-panel">
+            <h1 class="contact-us-heading">Get In Touch</h1>
+            <p class="contact-us-description">Connect with Mosaic Venture Network. Reach out to discuss partnerships, investments, or explore collaboration opportunities across our global ecosystem.</p>
+            
+            <div class="contact-us-details">
+                <div class="contact-us-detail">
+                    <div class="contact-us-detail-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-us-detail-content">
+                        <h3>Our Headquarters</h3>
+                        <p>111 Peter St, 9th Floor, Suite 902<br>Toronto, ON M5V 2H1, Canada</p>
+                    </div>
+                </div>
+                
+                <div class="contact-us-detail">
+                    <div class="contact-us-detail-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-us-detail-content">
+                        <h3>Email Address</h3>
+                        <a href="mailto:info@mosaicventurenetwork.com">info@mosaicventurenetwork.com</a>
+                        <a href="mailto:partnerships@mosaicventurenetwork.com">partnerships@mosaicventurenetwork.com</a>
+                    </div>
+                </div>
+                
+                <div class="contact-us-detail">
+                    <div class="contact-us-detail-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-us-detail-content">
+                        <h3>Contact Number</h3>
+                        <a href="tel:+14163459437">+1 (416) 345-9437</a>
+                        <p>Monday - Friday, 9AM - 6PM EST</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-us-social">
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+
+        <!-- Right Panel: Contact Form -->
+        <div class="contact-us-form-panel">
+            <h2>Send Us a Message</h2>
+            <p>Fill out the form below and our team will get back to you within 24 hours.</p>
+            
+            <form class="contact-us-form" id="contactForm">
+                <div class="contact-us-form-group">
+                    <label class="contact-us-form-label" for="name">
+                        <i class="fas fa-user"></i> Full Name
+                    </label>
+                    <input type="text" id="name" name="name" class="contact-us-form-input" placeholder="Enter your full name" required>
+                    <div class="contact-us-error" id="nameError"></div>
+                </div>
+                
+                <div class="contact-us-form-group">
+                    <label class="contact-us-form-label" for="email">
+                        <i class="fas fa-envelope"></i> Email Address
+                    </label>
+                    <input type="email" id="email" name="email" class="contact-us-form-input" placeholder="name@example.com" required>
+                    <div class="contact-us-error" id="emailError"></div>
+                </div>
+                
+                <div class="contact-us-form-group">
+                    <label class="contact-us-form-label" for="subject">
+                        <i class="fas fa-tag"></i> Subject
+                    </label>
+                    <input type="text" id="subject" name="subject" class="contact-us-form-input" placeholder="What is this regarding?" required>
+                    <div class="contact-us-error" id="subjectError"></div>
+                </div>
+                
+                <div class="contact-us-form-group">
+                    <label class="contact-us-form-label" for="message">
+                        <i class="fas fa-comment"></i> Message
+                    </label>
+                    <textarea id="message" name="message" class="contact-us-form-textarea" placeholder="Tell us about your inquiry..." rows="5" required></textarea>
+                    <div class="contact-us-error" id="messageError"></div>
+                </div>
+                
+                <button type="submit" class="contact-us-form-submit" id="submitBtn">
+                    <span>Send Message</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+            
+            <div class="contact-us-success" id="successMessage">
+                <i class="fas fa-check-circle"></i> Thank you! Your message has been sent successfully.
+            </div>
         </div>
     </div>
-</section>
 
 
-<!-- SECTION 2 – Two Images + Center Text -->
-<section class="aboutsection2">
-    <div class="about2-container">
-        <img src="images/about2.jpeg" class="about2-img left-img">
-        <div class="about2-text">
-            <h2>Our Mission</h2>
-            <p>We are committed to fostering a thriving, future-focused ecosystem where innovators can confidently build, grow, and succeed. At MOSAIC Ventures, our mission goes beyond simple support—we actively empower entrepreneurs by connecting them with strategic partners, global mentors, and investment opportunities that accelerate their journey. Through our extensive international network, founders gain access to industry expertise, market insights, and collaborative pathways that strengthen their competitive edge. We work closely with startups to refine their vision, enhance their capabilities, and unlock new possibilities across diverse sectors. By bridging the gap between ideas and impactful execution, we ensure that innovators receive the right guidance, resources, and exposure at every stage of their growth. MOSAIC Ventures serves as a catalyst for transformation, helping ambitious entrepreneurs turn groundbreaking concepts into scalable, sustainable ventures that create long-lasting value in today’s evolving global landscape.</p>
-        </div>
-        <img src="images/about3.jpeg" class="about2-img right-img">
-    </div>
-</section>
 
 
-<!-- SECTION 3 – Centered Text + Icons -->
-<section class="aboutsection3">
-    <h2>What We Stand For !!!!</h2>
-
-    <div class="about3-grid">
-        <div class="about3-card">
-            <h3>Innovation</h3>
-            <p>We champion bold ideas that push industries forward.</p>
-        </div>
-
-        <div class="about3-card">
-            <h3>Collaboration</h3>
-            <p>We build networks that create lasting impact.</p>
-        </div>
-
-        <div class="about3-card">
-            <h3>Growth</h3>
-            <p>We open doors to funding, markets, and opportunity.</p>
-        </div>
-    </div>
-</section>
 
 
-<!-- SECTION 4 – Two-Column Image + Text -->
-<section class="aboutsection4">
-    <div class="about4-wrapper">
-        <div class="about4-img-box">
-            <img src="images/about4.jpeg">
-        </div>
-        <div class="about4-text">
-            <h2>Partnering With Visionaries</h2>
-            <p>We support founders from early-stage concepts to global expansion. With industry expertise and strategic insights, MOSAIC Ventures empowers leaders to build meaningful, scalable companies.</p><br>
-           <a 
-        class="apply-btn-right"
-        href="https://docs.google.com/forms/d/e/1FAIpQLSfB2PHBsbTWPdLzU6aFZavRDyZS5VD-MWI3cAWOE3Az0FnuPw/viewform?usp=preview"
-        target="_blank">
-        Apply Now
-      </a>
-        </div>
-    </div>
-</section>
+
+
+<br><br>
 
 
 
@@ -164,99 +236,20 @@
 
 
 
-<!-- SECTION 5 – Our Journey Timeline -->
-<section class="aboutsection5">
-    <h2>🫆 Our Journey 🫆</h2>
-    <div class="timeline">
-        <div class="timeline-item fade-up">
-            <div class="timeline-year">2018</div>
-            <p>MOSAIC Ventures was formed with a mission to support early-stage founders.</p>
-        </div>
-
-        <div class="timeline-item fade-up">
-            <div class="timeline-year">2020</div>
-            <p>Expanded our global investor network and strategic partnerships.</p>
-        </div>
-
-        <div class="timeline-item fade-up">
-            <div class="timeline-year">2022</div>
-            <p>Launched accelerator programs and sector-specific venture support.</p>
-        </div>
-
-        <div class="timeline-item fade-up">
-            <div class="timeline-year">2024</div>
-            <p>Reached 1,000+ founders supported across multiple sectors.</p>
-        </div>
-    </div>
-</section>
-
-
-<!-- SECTION 6 – Leadership Team -->
-<section class="aboutsection6">
-    <h2>👈 Leadership Team 👉</h2>
-    <div class="team-grid">
-        <div class="team-card fade-up">
-            <img src="images/about5.jpeg">
-            <h3>Sarah Thompson</h3>
-            <p>CEO & Venture Lead</p>
-        </div>
-
-        <div class="team-card fade-up">
-            <img src="images/about6.jpeg">
-            <h3>David Miller</h3>
-            <p>Head of Global Partnerships</p>
-        </div>
-
-        <div class="team-card fade-up">
-            <img src="images/about7.jpeg">
-            <h3>Emily Carter</h3>
-            <p>Innovation Strategist</p>
-        </div>
-    </div>
-</section>
 
 
 
-<!-- SECTION 7 – Global Partners -->
-<section class="aboutsection7">
-    <h2>😀Our Global Partners😀</h2>
-
-    <div class="partners-slider">
-        <div class="partners-track">
-            <img src="images/about10.jpeg">
-            <img src="images/about9.jpeg">
-            <img src="images/about8.jpeg">
-            <img src="images/about11.jpeg">
-            <img src="images/about12.jpeg">
-            <img src="images/about13.jpeg">
-
-            <!-- Duplicate for infinite loop -->
-            <img src="images/about10.jpeg">
-            <img src="images/about9.jpeg">
-            <img src="images/about8.jpeg">
-            <img src="images/about11.jpeg">
-            <img src="images/about12.jpeg">
-            <img src="images/about13.jpeg">
-        </div>
-    </div>
-</section>
 
 
 
-<!-- SECTION 8 – Mission & Vision Banner -->
-<section class="aboutsection8">
-    <div class="mv-wrapper fade-up">
-        <div class="mv-block">
-            <h3>Our Mission</h3>
-            <p>To accelerate the growth of innovators by providing capital, resources, and collaborative opportunity.</p>
-        </div>
 
-        <div class="mv-block">
-            <h3>Our Vision</h3>
-            <p>To be a global force in nurturing breakthrough ventures and shaping the future of industries.</p>
-        </div>
-    </div>
-</section>
+
+
+
+
+
+
+
 
 
 
@@ -363,6 +356,5 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
-
-        </body>
-    </html>
+</body>
+</html>
