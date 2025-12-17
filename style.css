@@ -8732,7 +8732,7 @@ h1, h2, h3 {
 }
 
 p, a {
-    color: var(--contact-us-text-gray);
+    color: var(--contact-us-text-black);
     text-decoration: none;
     transition: color 0.3s;
 }
