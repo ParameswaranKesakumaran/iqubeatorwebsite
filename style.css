@@ -7646,12 +7646,12 @@ h4 { font-size: 1.5rem; }
 
 /* Hero Section */
 .events-hero {
-    padding: 160px 0 100px;
-    background: linear-gradient(135deg, 
-        var(--primary-bg) 0%, 
-        var(--white) 100%);
+    padding: 100px 0 80px;
+    background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.98)), 
+                url('images/1.jpeg');
+    background-size: cover;
+    background-position: center;
     position: relative;
-    overflow: hidden;
 }
 
 .events-hero-content {
@@ -9134,9 +9134,9 @@ h4 { font-size: 1.5rem; }
 
 /* Hero Section */
 .investments-hero {
-    padding: 160px 0 120px;
+    padding: 100px 0 80px;
     background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.98)), 
-                url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+                url('images/1.jpeg');
     background-size: cover;
     background-position: center;
     position: relative;
